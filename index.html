@@ -103,13 +103,6 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
 
-                <!-- BUTTON RESERVE -->
-                <!-- <div class="col-12 col-sm align-self-center">
-                    <a href="#card" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"
-                        title="Or Call us at <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" role="button" aria-pressed="true">Reserve Table</a>
-                </div> -->
 
 <!-- ------------------------------------------------ -->
                 <!-- Button trigger modal -->
@@ -269,6 +262,15 @@
                 <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                	    <span class="fa fa-pause"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                	    <span class="fa fa-play"></span>
+                    </button>
+                </div>
+   
             </div>
         </div>
 
@@ -337,86 +339,6 @@
                             International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-
-        <!-- FOURTH ROW- ASSIGNMENT -->
-        <!-- <div class="row row-content justify-content-center">
-            <div class="card" id="reserveModal">
-                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                <div class="card-body"> -->
-
-                    <!-- <form> -->
-                        <!-- RADIO BUTTON FORM -->
-                        <!-- <div class="form-group row">
-                            <label for="Number of Guests" class="col-md-2 col-form-label">Number of Guests</label> -->
-
-                            <!-- Default inline 1-->
-                            <!-- <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline1"
-                                    name="inlineDefaultRadiosExample">
-                                <label class="custom-control-label" for="defaultInline1">1</label>
-                            </div> -->
-
-                            <!-- Default inline 2-->
-                            <!-- <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline2"
-                                    name="inlineDefaultRadiosExample">
-                                <label class="custom-control-label" for="defaultInline2">2</label>
-                            </div> -->
-
-                            <!-- Default inline 3-->
-                            <!-- <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline3"
-                                    name="inlineDefaultRadiosExample">
-                                <label class="custom-control-label" for="defaultInline3">3</label>
-                            </div>
-
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline1"
-                                    name="inlineDefaultRadiosExample">
-                                <label class="custom-control-label" for="defaultInline4">4</label>
-                            </div> -->
-
-                            <!-- Default inline 2-->
-                            <!-- <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline2"
-                                    name="inlineDefaultRadiosExample">
-                                <label class="custom-control-label" for="defaultInline5">5</label>
-                            </div> -->
-
-                            <!-- Default inline 3-->
-                            <!-- <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline3"
-                                    name="inlineDefaultRadiosExample">
-                                <label class="custom-control-label" for="defaultInline6">6</label>
-                            </div>
-                        </div> -->
-
-                        <!-- DATE & TIME FORM -->
-                        <!-- <div class="form-group row">
-                            <label for="date" class="col-md-2 col-form-label">Date and Time</label>
-
-                            <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Date">
-                            </div>
-                            <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Time">
-                            </div>
-                        </div> -->
-
-
-                        <!-- BUTTON -->
-                        <!-- <div class="form-group row">
-                            <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">Reserve</button>
-                            </div>
-                        </div>
-                    </form> -->
-
-
-
 
     </div>
 
@@ -472,11 +394,17 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- <script>
+    <script>
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
         });
-    </script> -->
+    </script>
 
 
 </body>

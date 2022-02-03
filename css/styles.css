@@ -52,3 +52,15 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+
+
+
+
+.col-form-label{
+  color: #0f0f0f;
+}
+
+.modal-header{
+  color: #0f0f0f;
+}

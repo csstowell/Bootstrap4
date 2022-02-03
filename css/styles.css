@@ -53,14 +53,9 @@ body {
   bottom: 0px;
   z-index: 1; }
 
+.modal-header {
+  color: floralwhite;
+  background: #512DA8; }
 
-
-
-
-.col-form-label{
-  color: #0f0f0f;
-}
-
-.modal-header{
-  color: #0f0f0f;
-}
+.modal-body {
+  background: #D1C4E9; }

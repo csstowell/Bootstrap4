@@ -58,6 +58,11 @@ body{
 }
 
 
+.form-group {
+    color: #0f0f0f;
+}
+
+
 // NESTING SELECTORS (classes) ///
 .carousel {
     background:$background-dark;
@@ -81,12 +86,17 @@ body{
 }
 
 
+.modal-content{
+    .modal-header{
+      background-color: $background-dark;
+      color: floralwhite;
 
-.modal-header {
-    color: floralwhite;
-    background: #512DA8;
-}
+      button{
+          color: floralwhite;
+      }
+    }
 
-.modal-body {
-    background: #D1C4E9;
-}
+    .modal-body{
+        background-color: $background-pale;
+    }
+  }

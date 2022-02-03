@@ -52,7 +52,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Login </h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" id="loginClose">&times;</button>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -118,7 +118,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title" id="myModal">Reserve a Table</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="close" id="modalClose" aria-label="Close"></button>
                                     <span aria-hidden="true">&times;</span>
                                 </div>
                                 <!-- Modal Body -->
@@ -424,6 +424,12 @@
                 $(".btn").click(function () {
                     $("#myModal").modal("show");
                 });
+
+                $("#modalClose").click(function () {
+                    $("#myModal").modal("hide");
+                })
+
+
             });
         </script>
 
@@ -433,6 +439,10 @@
             $(document).ready(function () {
                 $(".navbar-text").click(function () {
                     $("#loginModal").modal("show");
+                });
+
+                $("#loginClose").click(function () {
+                    $("#loginModal").modal("hide");
                 });
             });
         </script>
